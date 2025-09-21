@@ -1,70 +1,162 @@
-# Getting Started with Create React App
+Dashboard Widget Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  A React-based dashboard application that allows users to dynamically manage widgets with graphical representations, image uploads, and real-time updates.
+Features :-
 
-## Available Scripts
+    📊 Dynamic widget management with JSON configuration
 
-In the project directory, you can run:
+    🎯 Graphical representations (Pie charts) for data visualization
 
-### `npm start`
+    🖼️ Image upload support for widgets
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    ⏰ Real-time timestamps on all widgets
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    🔄 Refresh functionality for dashboard updates
 
-### `npm test`
+    🔍 Search functionality across all widgets
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    ➕ Add/remove widgets from categories
 
-### `npm run build`
+    📱 Responsive design
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Prerequisites :-
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    * Before running this project, make sure you have the following installed:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    * Node.js (version 14 or higher)
 
-### `npm run eject`
+    * npm (Node Package Manager)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  Installation Steps :-
+  
+   1. Clone the Repository
+      
+               git clone <your-repository-url>
+               cd dashboard-widget-system
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  3. Install Dependencies
+     
+         npm install
+         This command will install all the required dependencies including:
+         * React
+        
+         * React DOM
+       
+         * Other development dependencies
+       
+ 3. Start the Development Server
+    
+        npm start
+    
+        This will run the app in development mode. Open http://localhost:3000 to view it in your browser.
+  
+        The page will automatically reload if you make changes to the code.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Project Structure   
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+      src/
+         ├── components/
+            │   ├── Dashboard.js
+            │   ├── Category.js
+            │   ├── Widget.js
+            │   ├── WidgetList.js
+            │   ├── AddWidgetModal.js
+            │   └── PieChart.js
+            ├── data/
+            │   └── initialData.js
+            ├── styles/
+            │   └── App.css
+            ├── App.js
+            └── index.js
 
-## Learn More
+Usage Guide :-
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  Adding Widgets
+  
+       Click the "+ Add Widget" button in the header
+       
+       Select a category from the dropdown
+       
+       Choose a widget type (Text, Pie Chart, or Image)
+       
+       For Pie Charts, customize the data with labels, values, and colors
+       
+       For Image widgets, provide an image URL
+       
+       Click "Create Widget" to add it to the dashboard
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Managing Widgets
 
-### Code Splitting
+     Remove any widget by clicking the "×" button in the widget header
+     
+     Search for widgets using the search box in the header
+     
+     Refresh the dashboard using the refresh button (↻)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Widget Types
 
-### Analyzing the Bundle Size
+    Text Widgets: Display textual information
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    Pie Chart Widgets: Visualize data with interactive pie charts
 
-### Making a Progressive Web App
+    Image Widgets: Display images from provided URLs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Troubleshooting
 
-### Advanced Configuration
+Common Issues
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+     Port already in use: If port 3000 is busy, the terminal will prompt you to use another port
 
-### Deployment
+    Dependencies issues: Delete node_modules folder and run npm install again
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+    Build errors: Ensure you have the correct Node.js version (14+)
 
-### `npm run build` fails to minify
+Getting Help
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    If you encounter any problems:
+
+    Check the console for error messages
+
+    Ensure all dependencies are properly installed
+
+     Verify your Node.js and npm versions
+
+Technologies Used
+
+    React.js
+
+    CSS3 (with Flexbox and Grid)
+
+    JavaScript (ES6+)
+
+    Browser Support
+
+This application supports all modern browsers including:
+
+    Chrome (recommended)
+
+    Firefox
+
+    Safari
+
+    Edge
+
+Available Scripts
+
+    In the project directory, you can run:
+
+     npm start - Runs the app in development mode
+
+    npm test - Launches the test runner
+
+    npm run build - Builds the app for production
+
+    npm run eject - Ejects from Create React App (one-way operation)
+
+Contributing
+
+      Fork the repository
+      Create a feature branch
+      Make your changes
+     Test your changes
+    Submit a pull request
