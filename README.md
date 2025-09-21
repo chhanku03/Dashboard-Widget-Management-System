@@ -31,7 +31,7 @@ Prerequisites :-
   
    1. Clone the Repository
       
-               git clone <your-repository-url>
+               git clone <https://github.com/chhanku03/Dashboard-Widget-Management-System.git>
                cd dashboard-widget-system
 
   3. Install Dependencies
